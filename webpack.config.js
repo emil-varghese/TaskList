@@ -4,7 +4,7 @@ var path = require('path');
 module.exports = {
   entry: [
     'script!jquery/dist/jquery.min.js',
-    'script!foundation-sites/dist/foundation.min.js',
+    'script!foundation-sites/dist/js/foundation.min.js',
     './app/app.jsx'
   ],
   externals: {
@@ -23,6 +23,12 @@ module.exports = {
   resolve: {
     root: __dirname,
     alias: {
+      app: 'app',
+      Main: 'app/components/Main',
+      Navigation: 'app/components/Navigation',
+      Setup: 'app/components/Setup',
+      ClientList: 'app/components/setup/ClientList',
+      Clients: 'app/components/setup/Clients',
       applicationStyles: 'app/styles/app.scss'
     },
     extensions: ['', '.js', '.jsx']

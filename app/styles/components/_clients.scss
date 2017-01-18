@@ -1,0 +1,17 @@
+.client-container {
+  align-items: center;
+  display: flex;
+
+  p, input {
+    margin: 0;
+    display: flex;
+  }
+}
+
+.container-tbody {
+  padding: 0;
+
+  td {
+    padding: 0;
+  }
+}
